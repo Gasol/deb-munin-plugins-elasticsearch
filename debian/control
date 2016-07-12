@@ -1,0 +1,20 @@
+Source: munin-plugins-elasticsearch
+Section: net
+Priority: optional
+Maintainer: Gasol Wu <gasol.wu@gmail.com>
+Build-Depends-Indep: perl
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://github.com/y-ken/munin-plugin-elasticsearch
+Vcs-Git: https://github.com/y-ken/munin-plugin-elasticsearch.git
+Vcs-Browser: https://github.com/y-ken/munin-plugin-elasticsearch
+
+Package: munin-plugins-elasticsearch
+Architecture: all
+Depends: ${perl:Depends}, ${misc:Depends}, munin-common
+Description: network-wide graphing framework (elasticsearch plugins for node)
+ Munin is a highly flexible and powerful solution used to create graphs of
+ virtually everything imaginable throughout your network, while still
+ maintaining a rattling ease of installation and configuration.
+ .
+ Useful Munin plugin for monitoring elasticsearch 1.x nodes in Perl.

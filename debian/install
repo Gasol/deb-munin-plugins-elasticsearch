@@ -1,0 +1,11 @@
+elasticsearch_cache usr/share/munin/plugins
+elasticsearch_cluster_shards usr/share/munin/plugins
+elasticsearch_docs usr/share/munin/plugins
+elasticsearch_gc_time usr/share/munin/plugins
+elasticsearch_index_size usr/share/munin/plugins
+elasticsearch_index_total usr/share/munin/plugins
+elasticsearch_jvm_memory usr/share/munin/plugins
+elasticsearch_jvm_pools_size usr/share/munin/plugins
+elasticsearch_jvm_threads usr/share/munin/plugins
+elasticsearch_open_files usr/share/munin/plugins
+elasticsearch_cache usr/share/munin/plugins

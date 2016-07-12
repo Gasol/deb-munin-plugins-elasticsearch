@@ -1,0 +1,5 @@
+munin-plugins-elasticsearch (0.0.0~git20150120.00bbfda-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Gasol Wu <gasol.wu@gmail.com>  Mon, 11 Jul 2016 14:55:13 +0800

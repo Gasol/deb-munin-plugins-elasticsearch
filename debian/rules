@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+%:
+	dh $@
+
+get_orig_source:
+	git clone --depth=1 https://github.com/y-ken/munin-plugin-elasticsearch.git
+	cd munin-plugin-elasticsearch && \
+		DEB_VERSION=`git log -n 1 --pretty=0.0.0~git%ad.%h --date=short | tr -d '-'` && \
+		git archive --prefix='munin-plugins-elasticsearch/' --format=tar.gz -o ../../munin-plugins-elasticsearch_$$DEB_VERSION.orig.tar.gz HEAD
+	rm -rf munin-plugin-elasticsearch
