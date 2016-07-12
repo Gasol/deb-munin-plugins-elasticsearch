@@ -1,4 +1,4 @@
-munin-plugins-elasticsearch (0.0.0~git20150120.00bbfda-1) unstable; urgency=low
+munin-plugins-elasticsearch (0.0.0~git20150120.00bbfda-1ppa1~trusty) trusty; urgency=low
 
   * Initial release
 
