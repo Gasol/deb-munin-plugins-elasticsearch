@@ -20,7 +20,7 @@ elasticsearch_jvm_threads - A munin plugin that collects stats from the JVM of y
 
 =head1 APPLICABLE SYSTEMS
 
-elasticsearch
+Elasticsearch
 
 =head1 CONFIGURATION
 
@@ -52,8 +52,8 @@ sub get_json_from_url {
     return $data;
 }
 
-my $data = get_json_from_url("http://$host:$port/_nodes?jvm=true");
-my $t_data = get_json_from_url("http://$host:$port/_nodes/stats?jvm=true");
+my $data = get_json_from_url("http://$host:$port/_nodes/jvm");
+my $t_data = get_json_from_url("http://$host:$port/_nodes/stats/jvm");
 my %out = (count => 0, peak_count => 0);
 
 foreach my $full_node_name (keys %{$data->{nodes}}) {
@@ -63,7 +63,7 @@ foreach my $full_node_name (keys %{$data->{nodes}}) {
     }
 }
 if ($ARGV[0] and $ARGV[0] eq 'config') {
-    print "graph_title elasticsearch JVM threads\n";
+    print "graph_title Elasticsearch JVM threads\n";
     print "graph_category elasticsearch\n";
     print "graph_scale no\n";
 
