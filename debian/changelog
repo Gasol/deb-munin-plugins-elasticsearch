@@ -1,3 +1,9 @@
+munin-plugins-elasticsearch (0.0.0~git20170209.ecc7325-1) unstable; urgency=medium
+
+  * New master release
+
+ -- Gasol Wu <gasol.wu@gmail.com>  Tue, 21 Feb 2017 17:26:25 +0800
+
 munin-plugins-elasticsearch (0.0.0~git20150120.00bbfda-1) unstable; urgency=low
 
   * Initial release
